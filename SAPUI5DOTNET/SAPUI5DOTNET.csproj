@@ -2721,6 +2721,7 @@
     <Content Include="resources\sap\uxap\themes\sap_hcb\ObjectPageSection.less" />
     <Content Include="resources\sap\uxap\themes\sap_hcb\ObjectPageSubSection.less" />
     <Content Include="resources\sap\uxap\themes\sap_hcb\resources.json" />
+    <Content Include="neo-app.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

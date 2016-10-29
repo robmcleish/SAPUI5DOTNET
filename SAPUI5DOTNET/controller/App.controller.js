@@ -4,10 +4,11 @@ sap.ui.define([
 	"./utilities"
 ], function(baseController, jsonModel, utilities) {
 	"use strict";
+	console.log("Inside app.controller.js");
 
 	return baseController.extend("whatever.controller.App", {
 
-		onInit: function() {
+	    onInit: function () {
 			var oViewModel,
 				fnSetAppNotBusy,
 				oListSelector = this.getOwnerComponent().oListSelector,
