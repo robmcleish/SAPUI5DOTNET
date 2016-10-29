@@ -6,7 +6,6 @@ sap.ui.define([
 	"whatever/controller/ErrorHandler"
 ], function(UIComponent, Device, models, ListSelector, ErrorHandler) {
 	"use strict";
-	console.log("Inside component.js");
 
 	return UIComponent.extend("whatever.Component", {
 
@@ -21,14 +20,15 @@ sap.ui.define([
 		 * @public
 		 * @override
 		 */
-		init: function() {
+		init: function () {
+		    console.log("Inside component.js init");
 			this.oListSelector = new ListSelector();
 			this._oErrorHandler = new ErrorHandler(this);
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 			// set the FLP model
-			//RM this.setModel(models.createFLPModel(), "FLP");
+			this.setModel(models.createFLPModel(), "FLP");
 			
 
 			// call the base component's init function and create the App view

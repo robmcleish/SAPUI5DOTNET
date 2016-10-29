@@ -362,10 +362,10 @@ onClickCashButton: function () {
 	*/
 onClickTakePhoto: function () {
 				MessageBox.show(
-                                 "Image Upload is Coming!", { 
-				      icon: sap.m.MessageBox.Icon.INFORMATION,    
-		      		      title: "Coin Turtle",    
-				      actions: [sap.m.MessageBox.Action.OK]
+								 "Image Upload is Coming!", { 
+					  icon: sap.m.MessageBox.Icon.INFORMATION,    
+						  title: "Coin Turtle",    
+					  actions: [sap.m.MessageBox.Action.OK]
 						});
 
 
