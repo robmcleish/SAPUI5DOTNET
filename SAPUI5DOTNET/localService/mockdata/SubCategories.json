@@ -1,0 +1,163 @@
+[
+	{
+		"Id": "DC Comics",
+		"Name": "DC Comics",
+		"MainCategoryId": "Comics",
+		"MainCategoryName": "Comics"
+	},
+	{
+		"Id": "Marvel Comics",
+		"Name": "Marvel Comics",
+		"MainCategoryId": "Comics",
+		"MainCategoryName": "Comics"
+	},
+	{
+		"Id": "Dark Horse",
+		"Name": "Dark Horse",
+		"MainCategoryId": "Comics",
+		"MainCategoryName": "Comics"
+	},
+	{
+		"Id": "Vertigo",
+		"Name": "Vertigo",
+		"MainCategoryId": "Comics",
+		"MainCategoryName": "Comics"
+	},
+		{
+		"Id": "Star Wars",
+		"Name": "Star Wars",
+		"MainCategoryId": "Collectibles",
+		"MainCategoryName": "Collectibles"
+	},
+		{
+		"Id": "Game of Thrones",
+		"Name": "Games of Thrones",
+		"MainCategoryId": "Collectibles",
+		"MainCategoryName": "Collectibles"
+	},
+	{
+		"Id": "Dr Who",
+		"Name": "Dr Who",
+		"MainCategoryId": "Dr Who",
+		"MainCategoryName": "Dr Who"
+	},
+	{
+		"Id": "Super Heroes",
+		"Name": "Super Heroes",
+		"MainCategoryId": "Super Heroes",
+		"MainCategoryName": "Super Heroes"
+	},
+	{
+		"Id": "Star Trek",
+		"Name": "Star Trek",
+		"MainCategoryId": "Super Heroes",
+		"MainCategoryName": "Super Heroes"
+	},
+	{
+		"Id": "McDonalds",
+		"Name": "McDonalds",
+		"MainCategoryId": "Food",
+		"MainCategoryName": "Food"
+	},
+	{
+		"Id": "Hungry Jacks",
+		"Name": "Hungry Jacks",
+		"MainCategoryId": "Food",
+		"MainCategoryName": "Food"
+	},
+	{
+		"Id": "Subway",
+		"Name": "Subway",
+		"MainCategoryId": "Food",
+		"MainCategoryName": "Food"
+	},
+	{
+		"Id": "KFC",
+		"Name": "KFC",
+		"MainCategoryId": "Food",
+		"MainCategoryName": "Food"
+	}
+	,
+	{
+		"Id": "DVD",
+		"Name": "DVD",
+		"MainCategoryId": "Media",
+		"MainCategoryName": "Media"
+	}
+	,
+	{
+		"Id": "CD",
+		"Name": "CD",
+		"MainCategoryId": "Media",
+		"MainCategoryName": "Media"
+	}
+	,
+	{
+		"Id": "iTunes",
+		"Name": "iTunes",
+		"MainCategoryId": "Media",
+		"MainCategoryName": "Media"
+	}
+	,
+	{
+		"Id": "XBOX",
+		"Name": "XBOX",
+		"MainCategoryId": "Media",
+		"MainCategoryName": "Media"
+	},
+	{
+		"Id": "Playstation",
+		"Name": "Playstation",
+		"MainCategoryId": "Media",
+		"MainCategoryName": "Media"
+	},
+	{
+		"Id": "Portable Devices",
+		"Name": "Portable Devices",
+		"MainCategoryId": "Tech",
+		"MainCategoryName": "Tech"
+	},
+	{
+		"Id": "Computer Hardware",
+		"Name": "Computer Hardware",
+		"MainCategoryId": "Tech",
+		"MainCategoryName": "Tech"
+	},
+	{
+		"Id": "Gaming",
+		"Name": "Gaming",
+		"MainCategoryId": "Tech",
+		"MainCategoryName": "Tech"
+	}
+	,
+	{
+		"Id": "Audio/Video",
+		"Name": "Audio/Video",
+		"MainCategoryId": "Tech",
+		"MainCategoryName": "Tech"
+	},
+		{
+		"Id": "Clothing",
+		"Name": "Clothing",
+		"MainCategoryId": "Sport",
+		"MainCategoryName": "Sport"
+	},
+		{
+		"Id": "Equipment",
+		"Name": "Equipment",
+		"MainCategoryId": "Sport",
+		"MainCategoryName": "Sport"
+	},
+	{
+		"Id": "Shoes",
+		"Name": "Shoes",
+		"MainCategoryId": "Sport",
+		"MainCategoryName": "Sport"
+	},
+		{
+		"Id": "Merchandise",
+		"Name": "Merchandise",
+		"MainCategoryId": "Sport",
+		"MainCategoryName": "Sport"
+	}
+]

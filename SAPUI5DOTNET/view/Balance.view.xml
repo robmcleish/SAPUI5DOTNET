@@ -1,0 +1,50 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="whatever.controller.Balance">
+	<App>
+		<pages>
+			<Page title="Cash Balance" id="balance">
+			<content>
+					<Table id="table0" items="{path: '/Transactions', sorter: {path: 'ID', descending: false}}" noDataText="No Transactions Found">
+						<items>
+							<ColumnListItem counter="0" id="item1">
+								<cells>
+									<Text id="text4" text="{Date}"/>
+									<Text id="text5" text="{Description}"/>
+									<Text id="text6" text="${MoneyIn}"/>
+									<Text id="text7" text="${MoneyOut}"/>
+									<Text id="text8" text="${Balance}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="column0">
+								<header>
+									<Label id="label0" text="Date"/>
+								</header>
+							</Column>
+							<Column id="column1">
+								<header>
+									<Label id="label1" text="Description"/>
+								</header>
+							</Column>
+							<Column id="column2">
+								<header>
+									<Label id="label2" text="Money In"/>
+								</header>
+							</Column>
+							<Column id="column3">
+								<header>
+									<Label id="label3" text="Money Out"/>
+								</header>
+							</Column>
+							<Column id="column4">
+								<header>
+									<Label id="label4" text="Balance"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

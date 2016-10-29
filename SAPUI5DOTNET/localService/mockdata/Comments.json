@@ -1,0 +1,23 @@
+[
+	{
+		"CommentID": "1",
+		"ProductID": "BM001",
+		"Name": "Josh Smith",
+		"Date": "1 June 2015",
+		"Comment": "I love this so much. I will buy it when I have the money"
+	},
+	{
+		"CommentID": "2",
+		"ProductID":"BM001",
+		"Name": "Bill Bloggs",
+		"Date": "15 June 2015",
+		"Comment": "I want to buy this so much"
+	},
+		{
+		"CommentID": "3",
+		"ProductID":"CM001",
+		"Name": "Charles Chaplin",
+		"Date": "25 June 2015",
+		"Comment": "I bought this myself"
+	}
+	]

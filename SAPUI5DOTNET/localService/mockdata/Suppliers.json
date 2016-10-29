@@ -1,0 +1,26 @@
+[
+	{
+		"Id": "100000000",
+		"Name": "Forbidden Planet",
+		"Phone": "0622734567",
+		"Email": "info@forbiddenplanet.co.uk",
+		"WebAddress": "http://www.forbiddenplanet.co.uk/",
+		"FormattedAddress": "Charring Cross, London, UK",
+		"FormattedContactName": "Mr Comic Manager",
+		"ContactPhone1": "0622734567",
+		"ContactPhone2": "0622734004",
+		"ContactEmail": "info@forbiddenplanet.co.uk"
+	},
+		{
+		"Id": "100000002",
+		"Name": "Zing Pop Culture",
+		"Phone": "0622734567",
+		"Email": "info@zing.com.au",
+		"WebAddress": "https://www.zingpopculture.com.au/",
+		"FormattedAddress": "Zing!, Robina Town Centre, Gold Coast Australia",
+		"FormattedContactName": "Mr Zing Manager",
+		"ContactPhone1": "0622734567",
+		"ContactPhone2": "0622734004",
+		"ContactEmail": "info@zing.com.au"
+	}
+]

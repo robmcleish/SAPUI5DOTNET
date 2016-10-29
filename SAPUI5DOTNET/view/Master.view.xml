@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:semantic="sap.m.semantic" controllerName="whatever.controller.Master">
+	<semantic:MasterPage id="page" title="Coin Turtle" navButtonPress="onNavBack" showNavButton="true">
+		<semantic:subHeader>
+			<Bar id="headerBar">
+			<contentLeft>
+			    <Button width="50px" id="__button0" icon="sap-icon://home" press="onHomeClicked"/>
+			    <Button width="50px" id="__button1" icon="sap-icon://collaborate" press="onCommunityClicked"/>
+			    <Button width="50px" id="__button3" icon="sap-icon://favorite" press="onFriendsClicked"/>
+			    <Button width="100px" id="__button2" icon="sap-icon://account" press="onMeClicked"/>
+			</contentLeft>
+			</Bar>
+		</semantic:subHeader>
+		<semantic:content>
+			<!-- For client side filtering add this to the items attribute:  parameters: {operationMode: 'Client'}}" -->
+			<List id="list" items="{ path: '/Products', sorter: { path: 'Name', descending: false }, groupHeaderFactory: '.createGroupHeader' }" busyIndicatorDelay="{masterView>/delay}" noDataText="{masterView>/noDataText}" mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true" updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
+				<infoToolbar>
+					<Toolbar active="true" id="filterBar" visible="{masterView>/isFilterBarVisible}" press="onOpenViewSettings">
+						<Title id="filterBarLabel" text="{masterView>/filterBarLabel}"/>
+					</Toolbar>
+				</infoToolbar>
+				<items>
+					<ObjectListItem type="{= ${device>/system/phone} ? 'Active' : 'Inactive'}" press="onSelectionChange" title="{Name}" numberUnit="{Id}"/>
+				</items>
+			</List>
+			<Button text="Card " width="100px" id="__button4" activeIcon="sap-icon://add" icon="sap-icon://add" press="onAdd"/>
+			<Button text="Photo" width="100px" id="__button6" icon="sap-icon://add" press="onClickTakePhoto"/>
+			<Button text="Cash" width="100px" id="__button5" icon="sap-icon://money-bills" press="onClickCashButton"/>
+		</semantic:content>
+	</semantic:MasterPage>
+</mvc:View>

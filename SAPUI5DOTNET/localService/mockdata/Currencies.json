@@ -1,0 +1,22 @@
+[
+	{
+		"Code": "EUR",
+		"Text": "Euro"
+	},
+	{
+		"Code": "JPY",
+		"Text": "Yen"
+	},
+	{
+		"Code": "USD",
+		"Text": "US Dollar"
+	},
+	{
+		"Code": "AUD",
+		"Text": "Australian Dollar"
+	},
+		{
+		"Code": "GBP",
+		"Text": "British Pound"
+	}
+]

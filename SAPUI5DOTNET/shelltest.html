@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SAPUI5 test</title>
+    <script id="sap-ui-bootstrap"
+            src="resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-libs="sap.ui.commons,sap.ui.ux3"
+            data-sap-ui-compatVersion="edge"
+            >
+    </script>
+    <script>
+        $(function () {
+            sap.ui.localResources("demo");
+
+            var oShell = sap.ui.ux3.Shell({
+                appTitle: "Coin Turtle"
+            });
+
+            oShell.placeAt('content');
+        })
+    </script>
+</head>
+<body>
+    <div style="margin:10px;">
+        <div id='content'></div>
+    </div>
+</body>
+</html>

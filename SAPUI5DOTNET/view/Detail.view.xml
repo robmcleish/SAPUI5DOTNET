@@ -1,0 +1,90 @@
+<mvc:View 
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:semantic="sap.m.semantic" 
+	xmlns:footerbar="sap.ushell.ui.footerbar" 
+	controllerName="whatever.controller.Detail" 
+	viewName="Product Details">
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{MainCategoryName} / {SubCategoryName}" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+		<semantic:content>
+
+	<CustomTile id="__tile1">
+		<content>
+			<Label text="Label" width="100%" id="__label0"/>
+			<Image width="180px" height="250px" id="__image0" src="{ImageUrl}"/>
+		</content>
+</CustomTile>
+				<CustomTile id="__tile2">
+					<content>
+					<List noDataText="Drop list items here" id="__list0" headerText="Product Details">
+					<items>
+						<StandardListItem type="Active" counter="0" title="Date:" icon="sap-icon://calendar" id="__item0" description="{LastModified}"/>
+						<StandardListItem type="Active" counter="0" title="Status:" icon="sap-icon://shipping-status" id="__item1" description="{AverageRating}"/>
+						<StandardListItem type="Active" counter="0" title="Likes:" description="{RatingCount}" icon="sap-icon://bookmark" id="__item2"/></items>
+				</List>
+					</content>
+				</CustomTile>
+<StandardTile title="Owner: {Owner}" info="Class Year: 9" icon="{ImageUrl}" activeIcon="sap-icon://customer" number="123" infoState="Success" id="__tile3" numberUnit="points" press="onUserPressed"/>
+<StandardTile info="Quantity: {StockQuantity}" icon="sap-icon://cart-5" activeIcon="sap-icon://customer" infoState="Success" id="__tile0" number="{Price}" numberUnit="{CurrencyCode}" title="Purchased from: {SupplierName}" removable="false" press="onSupplierPressed"/>
+<UploadCollection fileType="undefined" maximumFilenameLength="0" maximumFileSize="0" mimeType="undefined" id="__collection0">
+	<items>
+		<UploadCollectionItem contributor="Contributor1" fileName="fileName1" fileSize="0" uploadedDate="Fri Aug 05 2016" id="__item7"/></items>
+</UploadCollection>
+<HBox width="100%" id="__hbox0">
+	<items>
+		<ToggleButton text="Like" width="100px" id="__likeButton" press="onClickLike"/>
+		<ToggleButton text="Buy" width="100px" id="__BuySellButton" press="onClickBuySell"/>
+	</items>
+</HBox>
+
+	<Panel id="__panel0" headerText="{Name}">
+			<content>
+				<Text text="{Description}" maxLines="10" id="__text4"/>
+			</content>
+		</Panel>
+					<Table id="CommentsTable" items="{path: '/Comments'}" noDataText="No Comments Found">
+						<items>
+							<ColumnListItem counter="0" id="item1">
+								<cells>
+									<Text id="text5" text="{Date}"/>
+									<Text id="text6" text="{Name}"/>
+									<Text id="text7" text="{Comment}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="column0">
+								<header>
+									<Label id="label0" text="Date"/>
+								</header>
+							</Column>
+							<Column id="column1">
+								<header>
+									<Label id="label1" text="Name"/>
+								</header>
+							</Column>
+							<Column id="column2">
+								<header>
+									<Label id="label2" text="Comment"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+		</semantic:content>
+		<semantic:editAction>
+			<semantic:EditAction id="edit" press="onEdit"/>
+		</semantic:editAction>
+		<semantic:customFooterContent>
+			<Button enabled="true" id="deleteButton" press="onDelete" text="Delete"/>
+		</semantic:customFooterContent>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+		<semantic:shareInJamAction>
+			<semantic:ShareInJamAction id="shareInJam" visible="{FLP>/isShareInJamActive}" press="onShareInJamPress"/>
+		</semantic:shareInJamAction>
+		<semantic:saveAsTileAction>
+			<footerbar:AddBookmarkButton id="shareTile" title="{detailView>/saveAsTileTitle}"/>
+		</semantic:saveAsTileAction>
+	</semantic:DetailPage>
+</mvc:View>

@@ -1,0 +1,26 @@
+[
+	{
+		"Id": "Comics",
+		"Name": "Comics"
+	},
+	{
+		"Id": "Collectibles",
+		"Name": "Collectibles"
+	},
+	{
+		"Id": "Food",
+		"Name": "Food"
+	},
+	{
+		"Id": "Media",
+		"Name": "Media"
+	},
+	{
+		"Id": "Tech",
+		"Name": "Tech"
+	},
+	{
+		"Id": "Sport",
+		"Name": "Sport"
+	}
+]

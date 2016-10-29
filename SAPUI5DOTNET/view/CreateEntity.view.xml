@@ -1,0 +1,81 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="whatever.controller.CreateEntity">
+	<App>
+		<pages>
+			<Page title="Add Card" id="create">
+			<content>
+								<!-- Form for Product Information -->
+			<f:SimpleForm id="productInformationForm" class="sapUiForceWidthAuto sapUiResponsiveMargin" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="7" columnsM="7" title="General Information">
+				<f:content>
+					<Label id="nameLabel" text="Product Name:" required="true"/>
+					<Input id="productNameInput" type="Text" valueStateText="" maxLength="100" change="onInputChange" value="{path: 'Name'}"/>
+					<Label id="priceLabel" text="Price" required="true"/>
+					<Input id="priceInput" change="onNumberChange" value="{Price}" type="Text" textAlign="Right"/>
+					<ComboBox id="currencyBox" selectedKey="{CurrencyCode}" items="{path: '/Currencies', length: '300'}" selectionChange="onInputChange">
+						<core:Item id="currencyItem" key="{Code}" text="{Code}"/>
+					</ComboBox>
+					<Label id="categoryLabel" text="Main Category:" required="true"/>
+					<ComboBox id="categoryBox" selectionChange="onCategoryChange" selectedKey="{MainCategoryId}" items="{path: '/MainCategories'}">
+						<core:Item id="categoryItem" key="{Id}" text="{Name}"/>
+					</ComboBox>
+					<Label id="emptyLabel"/>
+					<Label id="subcategoryLabel" text="Sub Category:" required="true"/>
+					<ComboBox id="subcategoryBox" selectionChange="onSubcategoryChange" selectedKey="{SubCategoryId}" items="{path: '/SubCategories', sorter: {path: 'Name', descending: false}}">
+						<core:Item id="subcategoryItem" key="{Id}" text="{Name}"/>
+					</ComboBox>
+					<Label id="productIdLabel" text="ID"/>
+					<Input id="productIdInput" editable="false" value="{Id}"/>
+					<Label id="descriptionLabel" text="Description" required="true"/>
+					<TextArea id="descriptionArea" valueStateText="" maxLength="1000" change="onInputChange" value="{path: 'Description'}"/>
+					<Label id="supplierLabel" text="Supplier Name" required="true"/>
+					<Input id="supplierInput" type="Text" valueStateText="" maxLength="1000" change="onInputChange" showSuggestion="true" suggest="suggestMethod" maxSuggestionWidth="600px" filterSuggests="false" value="{path: 'SupplierName'}"/>
+					<Label id="placeHolderLabel"/>
+				</f:content>
+			</f:SimpleForm>
+
+					
+					
+								<!-- Form for Physical Properties -->
+			<f:SimpleForm id="physicalPropertiesForm" class="sapUiForceWidthAuto sapUiResponsiveMargin" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="7" columnsM="7" title="Technical Data">
+				<f:content>
+					<Label id="unitOfMeasureLabel" text="Quantity Unit" required="true"/>
+					<ComboBox id="unitOfMeasureBox" selectedKey="{QuantityUnit}" change="onInputChange" items="{path: '/QuantityUnits', sorter: {path: 'Shorttext', descending: false}}">
+						<core:Item id="unitOfMeasureItem" key="{Unit}" text="{Shorttext}"/>
+					</ComboBox>
+					<Label id="heightLabel" text="Height"/>
+					<Input id="heightInput" type="Text" change="onNumberChange" value="{DimensionHeight}" textAlign="Right"/>
+					<Select id="heightUomSelect" selectedKey="{DimensionUnit}" items="{path: '/DimensionUnits'}" change="onSelectChange">
+						<core:Item id="heightUomItem" key="{Unit}" text="{Text}"/>
+					</Select>
+					<Label id="widthLabel" text="Width"/>
+					<Input id="widthInput" type="Text" change="onNumberChange" value="{DimensionWidth}" textAlign="Right"/>
+					<Select id="widthUomSelect" selectedKey="{DimensionUnit}" items="{path: '/DimensionUnits'}" change="onSelectChange">
+						<core:Item id="widthUomItem" key="{Unit}" text="{Text}"/>
+					</Select>
+					<Label id="lengthLabel" text="Depth"/>
+					<Input id="lengthInput" type="Text" change="onNumberChange" value="{DimensionDepth}" textAlign="Right"/>
+					<Select id="lengthUomSelect" selectedKey="{DimensionUnit}" items="{path: '/DimensionUnits'}" change="onSelectChange">
+						<core:Item id="lengthUomItem" key="{Unit}" text="{Text}"/>
+					</Select>
+					<Label id="weightLabel" text="Weight"/>
+					<Input id="weightInput" type="Text" change="onNumberChange" value="{WeightMeasure}" textAlign="Right"/>
+					<Select id="weightUomSelect" selectedKey="{WeightUnit}" items="{path: '/WeightUnits'}" change="onSelectChange">
+						<core:Item id="weightUomItem" key="{Unit}" text="{Text}"/>
+					</Select>
+				</f:content>
+			</f:SimpleForm>
+			
+			<!--Allow adding fields at the bottom of the edit screen -->
+			<core:ExtensionPoint name="extensionBottomOfEditScreen"/>
+			</content>
+			<footer>
+	    	<OverflowToolbar id="footerToolbar">
+				<ToolbarSpacer id="footerBeginSpacer"/>
+				<Button id="saveButton" text="Save" press="onSavePressed"/>
+				<Button id="cancelButton" text="Cancel" press="onCancelPressed"/>
+				<Button id="shareButton" icon="sap-icon://action" press="onSharePressed"/>
+			</OverflowToolbar>
+		</footer>	
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

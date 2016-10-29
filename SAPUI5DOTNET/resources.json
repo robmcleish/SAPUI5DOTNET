@@ -1,0 +1,597 @@
+{
+    "resources": [
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/CreateEntity.controller.js"
+        },
+        {
+            "name": "controller/Detail.controller.js"
+        },
+        {
+            "name": "controller/ErrorHandler.js"
+        },
+        {
+            "name": "controller/ListSelector.js"
+        },
+        {
+            "name": "controller/Master.controller.js"
+        },
+        {
+            "name": "controller/Balance.controller.js"
+        },
+        {
+            "name": "controller/tempView.controller.js"
+        },
+        {
+            "name": "controller/ProductEdit.controller.js"
+        },
+        {
+            "name": "controller/utilities.js"
+        },
+        {
+            "name": "controller/Application.js"
+        },
+        {
+            "name": "controller/messages.js"
+        },
+        {
+            "name": "controller/TableOperations.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "localService/mockserver.js"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1000.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1001.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1002.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1003.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1007.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1010.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1011.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1020.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1021.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1022.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1023.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1030.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1031.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1032.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1035.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1036.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1037.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1040.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1041.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1042.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1050.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1051.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1052.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1055.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1056.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1060.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1061.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1062.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1063.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1064.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1065.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1066.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1067.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1068.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1069.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1070.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1071.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1072.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1073.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1080.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1081.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1082.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1083.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1085.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1090.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1091.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1092.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1095.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1096.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1097.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1100.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1101.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1102.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1103.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1104.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1105.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1106.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1107.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1110.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1111.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1112.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1113.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1114.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1115.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1116.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1117.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1118.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1119.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1120.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1137.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1138.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1210.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1500.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1501.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1502.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1600.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1601.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1602.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-1603.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2000.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2001.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2002.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2025.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2026.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-2027.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6100.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6101.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6102.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6110.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6111.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6120.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6121.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6122.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6123.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6130.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6131.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-6132.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-7000.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-7010.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-7020.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-7030.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-8000.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-8001.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-8002.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-8003.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9991.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9992.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9993.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9994.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9995.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9996.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9997.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9998.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/HT-9999.jpg"
+        },
+        {
+            "name": "localService/mockdata/images/PF-1000.jpg"
+        },
+        {
+            "name": "localService/mockdata/Currencies.json"
+        },
+        {
+            "name": "localService/mockdata/DimensionUnits.json"
+        },
+        {
+            "name": "localService/mockdata/ImageDrafts.json"
+        },
+        {
+            "name": "localService/mockdata/MainCategories.json"
+        },
+        {
+            "name": "localService/mockdata/ProductDrafts.json"
+        },
+        {
+            "name": "localService/mockdata/Products.json"
+        },
+        {
+            "name": "localService/mockdata/QuantityUnits.json"
+        },
+        {
+            "name": "localService/mockdata/SubCategories.json"
+        },
+        {
+            "name": "localService/mockdata/Suppliers.json"
+        },
+        {
+            "name": "localService/mockdata/WeightUnits.json"
+        },
+        {
+            "name": "localService/mockdata/Comments.json"
+        },
+        {
+            "name": "localService/mockdata/Transactions.json"
+        },
+        {
+            "name": "localService/mockdata/Users.json"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/formatter.js"
+        },
+        {
+            "name": "model/GroupSortState.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "test/flpSandbox.html"
+        },
+        {
+            "name": "test/flpSandboxMockServer.html"
+        },
+        {
+            "name": "test/integration/AllJourneys.js"
+        },
+        {
+            "name": "test/integration/BusyJourney.js"
+        },
+        {
+            "name": "test/integration/BusyJourneyPhone.js"
+        },
+        {
+            "name": "test/integration/FLPIntegrationJourney.js"
+        },
+        {
+            "name": "test/integration/MasterJourney.js"
+        },
+        {
+            "name": "test/integration/NavigationJourney.js"
+        },
+        {
+            "name": "test/integration/NavigationJourneyPhone.js"
+        },
+        {
+            "name": "test/integration/NotFoundJourney.js"
+        },
+        {
+            "name": "test/integration/NotFoundJourneyPhone.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit.html"
+        },
+        {
+            "name": "test/integration/opaTestsPhone.qunit.html"
+        },
+        {
+            "name": "test/integration/pages/App.js"
+        },
+        {
+            "name": "test/integration/pages/Browser.js"
+        },
+        {
+            "name": "test/integration/pages/Common.js"
+        },
+        {
+            "name": "test/integration/pages/Create.js"
+        },
+        {
+            "name": "test/integration/pages/Detail.js"
+        },
+        {
+            "name": "test/integration/pages/Master.js"
+        },
+        {
+            "name": "test/integration/pages/NotFound.js"
+        },
+        {
+            "name": "test/integration/PhoneJourneys.js"
+        },
+        {
+            "name": "test/testService.html"
+        },
+        {
+            "name": "test/testsuite.qunit.html"
+        },
+        {
+            "name": "test/unit/allTests.js"
+        },
+        {
+            "name": "test/unit/controller/App.controller.js"
+        },
+        {
+            "name": "test/unit/controller/ListSelector.js"
+        },
+        {
+            "name": "test/unit/model/formatter.js"
+        },
+        {
+            "name": "test/unit/model/GroupSortState.js"
+        },
+        {
+            "name": "test/unit/model/models.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit.html"
+        },
+        {
+            "name": "test/preview_hidden.html"
+        },
+        {
+            "name": "test.html"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/CreateEntity.view.xml"
+        },
+        {
+            "name": "view/Detail.view.xml"
+        },
+        {
+            "name": "view/DetailNoObjectsAvailable.view.xml"
+        },
+        {
+            "name": "view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "view/Master.view.xml"
+        },
+        {
+            "name": "view/NotFound.view.xml"
+        },
+        {
+            "name": "view/ViewSettingsDialog.fragment.xml"
+        },
+        {
+            "name": "view/Balance.view.xml"
+        },
+        {
+            "name": "view/tempView.view.xml"
+        },
+        {
+            "name": "view/ProductEdit.view.xml"
+        },
+        {
+            "name": "view/SupplierCard.fragment.xml"
+        },
+        {
+            "name": "view/UserCard.fragment.xml"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        }
+    ]
+}

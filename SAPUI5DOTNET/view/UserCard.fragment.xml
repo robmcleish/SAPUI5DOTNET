@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+   <QuickView id="userQuickView">
+      <QuickViewPage
+            header="Player"
+            icon="{ImageURL}"
+            title="{Name}"
+            description="{Name}" >
+         <QuickViewGroup heading="Contact Details">
+            <QuickViewGroupElement
+                  label="Phone"
+                  value="{Phone}"
+                  type="phone" />
+            <QuickViewGroupElement
+                  label="Email"
+                  value="{Email}" />                  
+         </QuickViewGroup>
+      </QuickViewPage>
+   </QuickView>
+</core:FragmentDefinition>

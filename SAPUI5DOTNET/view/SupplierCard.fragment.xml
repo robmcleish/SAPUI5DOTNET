@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+   <QuickView id="supplierQuickView">
+      <QuickViewPage
+            header="Supplier"
+            icon="sap-icon://account"
+            title="{Name}"
+            description="{FormattedContactName}" >
+         <QuickViewGroup heading="Contact Details">
+            <QuickViewGroupElement
+                  label="Phone"
+                  value="{Phone}"
+                  type="phone" />
+            <QuickViewGroupElement
+                  label="Address"
+                  value="{FormattedAddress}" />                  
+         </QuickViewGroup>
+         <QuickViewGroup heading="Main Contact">
+            <QuickViewGroupElement
+                  label="Name"
+                  value="{FormattedContactName}" />
+            <QuickViewGroupElement
+                  label="Mobile"
+                  value="{ContactPhone2}" 
+                  type="mobile" />
+            <QuickViewGroupElement
+                  label="Landline"
+                  value="{ContactPhone1}" 
+                  type="phone" />
+            <QuickViewGroupElement
+                  label="Email"
+                  value="{ContactEmail}" 
+                  type="email" />                      
+         </QuickViewGroup>         
+      </QuickViewPage>
+   </QuickView>
+</core:FragmentDefinition>
