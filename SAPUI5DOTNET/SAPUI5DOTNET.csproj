@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="basicTest.html" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -2744,9 +2745,9 @@
     <Content Include="controller\tempView.controller.js" />
     <Content Include="controller\utilities.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="coin.html" />
-    <Content Include="shelltest.html" />
     <Content Include="index.html" />
+    <Content Include="shelltest.html" />
+    <Content Include="shellapptest.html" />
     <Content Include="localService\metadata.xml" />
     <Content Include="localService\mockdata\images\HT-1000.jpg" />
     <Content Include="localService\mockdata\images\HT-1001.jpg" />

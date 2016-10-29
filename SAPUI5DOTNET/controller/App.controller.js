@@ -2,10 +2,10 @@ sap.ui.define([
 	"whatever/controller/BaseController",
 	"sap/ui/model/json/JSONModel",
 	"./utilities"
-], function(BaseController, JSONModel, utilities) {
+], function(baseController, jsonModel, utilities) {
 	"use strict";
 
-	return BaseController.extend("whatever.controller.App", {
+	return baseController.extend("whatever.controller.App", {
 
 		onInit: function() {
 			var oViewModel,
@@ -13,7 +13,7 @@ sap.ui.define([
 				oListSelector = this.getOwnerComponent().oListSelector,
 				iOriginalBusyDelay = this.getView().getBusyIndicatorDelay();
 
-			oViewModel = new JSONModel({
+			oViewModel = new jsonModel({
 				busy: true,
 				delay: 0,
 				itemToSelect: null,

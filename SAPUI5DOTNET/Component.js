@@ -6,7 +6,7 @@ sap.ui.define([
 	"whatever/controller/ErrorHandler"
 ], function(UIComponent, Device, models, ListSelector, ErrorHandler) {
 	"use strict";
-    console.log("Inside component.js");
+	console.log("Inside component.js");
 
 	return UIComponent.extend("whatever.Component", {
 
